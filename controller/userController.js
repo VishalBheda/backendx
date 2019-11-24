@@ -44,6 +44,7 @@ class UserController {
     
     async register(req, res){
         let userObject = {}
+        
          userObject.username = req.body.username
          userObject.password = req.body.password
          userObject.email = req.body.email
