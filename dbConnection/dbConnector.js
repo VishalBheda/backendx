@@ -8,7 +8,9 @@ const dbUrl = config.dbConnectionURL
 
 function dbConnector () {
 
-    var connection = mongoose.createConnection(dbUrl);
+    let dbOption = { useNewUrlParser: true, useUnifiedTopology: true } //for remove deprication warning
+  
+    var connection = mongoose.createConnection(dbUrl, dbOption);
    
     connection.on('connected', function () {
         console.log('Mongoose connected ' + dbUrl)
