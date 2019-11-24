@@ -1,0 +1,21 @@
+{
+  "name": "backendx",
+  "version": "1.0.0",
+  "description": "Backend-API gateway using mongoose express ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "mongoose",
+    "api",
+    "gateway"
+  ],
+  "author": "Vb",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.12"
+  }
+}
