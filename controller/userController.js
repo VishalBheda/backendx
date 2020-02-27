@@ -76,7 +76,7 @@ class UserController {
        
         let responseObject = { response: false, message: 'notFound' }
         try {
-            let isUserFound = await userModel.remove({'email': email})
+            let isUserFound = await userModel.deleteOne({'email': email})
             if(isUserFound) {
                 responseObject.response = true
                 responseObject.message = isUserFound
